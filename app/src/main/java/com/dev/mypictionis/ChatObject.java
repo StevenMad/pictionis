@@ -1,5 +1,10 @@
 package com.dev.mypictionis;
 
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
 import com.dev.mypictionis.com.dev.mypictionis.db.Message;
 
 import java.util.ArrayList;
@@ -25,4 +30,22 @@ public class ChatObject {
         messages.add(messageId,message);
         messageId++;
     }
+
 }
+
+
+//public class ChatActivity extends AppCompatActivity {
+//    private ListView lv;
+//    private ArrayAdapter<String> adapter;
+//    @Override
+//    protected void onCreate (Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_game);
+//
+//        adapter = new ArrayAdapter<String>(this,R.layout.activity_game);
+//
+//        lv = (ListView)findViewById(R.id.listView);
+//        lv.setAdapter(adapter);
+//        adapter.add(ChatObject.messageId);
+//    }
+//}

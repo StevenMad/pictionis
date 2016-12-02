@@ -4,6 +4,8 @@ package com.dev.mypictionis;
  * Created by Madhow on 15/11/2016.
  */
 
+//the coordinate of lines
+
 public class Coordinates {
 
     float x;

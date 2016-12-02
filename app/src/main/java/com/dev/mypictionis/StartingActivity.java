@@ -17,6 +17,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+//the menu activities
+
 public class StartingActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;

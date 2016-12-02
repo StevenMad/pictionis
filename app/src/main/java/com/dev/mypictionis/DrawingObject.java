@@ -9,6 +9,8 @@ import java.util.Map;
  * Created by Madhow on 15/11/2016.
  */
 
+//drawing the lines
+
 public class DrawingObject {
 
     int id;

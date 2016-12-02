@@ -19,6 +19,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+//manager the view of a player
+
 public class PlayerWatch extends AppCompatActivity {
 
     PlayerView playerView;

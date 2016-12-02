@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 /**
- * TODO: document your custom view class.
+ * manager the activities of player view
  */
 public class PlayerView extends View {
     private Path drawPath;

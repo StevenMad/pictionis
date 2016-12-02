@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+// create a new game
+
 public class MenuActivity extends AppCompatActivity {
 
     @Override

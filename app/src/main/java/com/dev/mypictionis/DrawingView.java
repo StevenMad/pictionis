@@ -25,6 +25,9 @@ import java.util.Set;
 /**
  * Created by Madhow on 09/11/2016.
  */
+
+//show the drawing lines
+
 public class DrawingView extends View {
 
     private Path drawPath;
