@@ -38,6 +38,8 @@
 
     <TextView
         android:id="@+id/chat_message_player"
+        android:maxLines="5"
+        android:scrollbars="vertical"
         android:padding="4dp"
         android:layout_height="100dp"
         android:background="@drawable/my_shape"
