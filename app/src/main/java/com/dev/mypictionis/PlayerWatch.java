@@ -62,7 +62,7 @@ public class PlayerWatch extends AppCompatActivity {
                     DataSnapshot data = ite.next();
                     Message message = data.getValue(Message.class);
                     messages.put(String.valueOf(idref),message);
-                    s+= message.getAuthor()+ " : "+message.getMessage()+"\n";
+                    s= message.getAuthor()+ " : "+message.getMessage()+"\n"+s;
                     idref++;
                 }
                 tv.setText(s);
