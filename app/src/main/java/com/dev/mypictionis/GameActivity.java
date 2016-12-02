@@ -3,6 +3,7 @@ package com.dev.mypictionis;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutCompat;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -45,6 +46,7 @@ public class GameActivity extends AppCompatActivity {
 
         //chat init
         tv = (TextView) findViewById(R.id.chat_message);
+        tv.setMovementMethod(new ScrollingMovementMethod());
         editText = (EditText) findViewById(R.id.edit_message);
         chatRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -61,7 +63,7 @@ public class GameActivity extends AppCompatActivity {
                     DataSnapshot data = ite.next();
                     Message message = data.getValue(Message.class);
                     messages.put(String.valueOf(idref),message);
-                    s+= message.getAuthor()+ " : "+message.getMessage()+"\n";
+                    s= message.getAuthor()+ " : "+message.getMessage()+"\n"+s;
                     idref++;
                 }
                 tv.setText(s);
